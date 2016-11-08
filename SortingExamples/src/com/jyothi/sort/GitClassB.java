@@ -1,13 +1,33 @@
 package com.jyothi.sort;
 
+/**
+ * 
+ * @author emalmas
+ *
+ */
 public class GitClassB {
 	private String message;
-	
-	public GitClassB(String messgae){
+
+	/**
+	 * 
+	 * @param messgae
+	 */
+	public GitClassB(String messgae) {
 		this.message = message;
 	}
-	
-	public void display(){
+
+	/**
+	 * 
+	 */
+	public void display() {
 		System.out.println("Hello " + this.message);
+	}	
+	
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
 	}
 }
