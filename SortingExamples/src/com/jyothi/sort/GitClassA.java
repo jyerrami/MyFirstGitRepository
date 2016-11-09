@@ -2,12 +2,20 @@ package com.jyothi.sort;
 
 public class GitClassA {
 	private int aInt;
-	private GitClassB gitb;
+	private int[] data = { 2,5,7,8,};
 	
+	private GitClassB gitb;
+
 	String message_;
 	public int sum(){
 		// just a dummy function to test
 		return 1;
+	}
+	
+	public void displayArray(){
+		for(int i: data){
+			System.out.println("data is " + i);
+		}
 	}
 	public void display(String message){
 		gitb = new GitClassB(message);
@@ -20,6 +28,8 @@ public class GitClassA {
 		gita.display("Fred");
 		
 		System.out.println(" calling dummy function sum " + gita.sum());
+
+		gita.displayArray();
 	}
 
 }
